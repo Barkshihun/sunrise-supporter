@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.png" />
+    <title>해돋이 도우미</title>
+  </head>
+  <body>
+    <div class="home">
+      <div class="home-content">
+        <h1>일출 시간을 입력하세요</h1>
+        <form id="timeForm">
+          <input type="time" required />
+          <button>✔️</button>
+        </form>
+        <span>일출 1시간 전부터 작동합니다</span>
+      </div>
+    </div>
+    <div class="main hide">
+      <div class="camera-wrapper">
+        <video id="cameraView" autoplay></video>
+      </div>
+      <div class="sun-background" style="top: -390px"></div>
+      <div class="sun" style="bottom: 0"></div>
+      <div class="ground" style="background: hsl(124 55% 0%)">
+        <h1 class="clock">00:00</h1>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

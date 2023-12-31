@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+video {
+  width: 100%;
+  background-color: black;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.camera-wrapper {
+  width: 100%;
+  height: 270px;
+  background-color: black;
+  overflow: hidden;
+}
+.home {
+  height: 100vh;
+  background: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  span {
+    margin-top: 7px;
+    text-align: center;
+    font-size: 15px;
+  }
+  h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    word-break: keep-all;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      margin-bottom: 10px;
+      width: 100%;
+      height: 30px;
+    }
+    button {
+      width: 60%;
+    }
+  }
+}
+.main {
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hide {
+  display: none;
+}
+.sun-background {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgb(169 226 252), white, rgb(255 87 34) 50%, black);
+  position: fixed;
+}
+.sun {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(white 50%, #ff9800 65%);
+  position: fixed;
+}
+.ground {
+  height: 20%;
+  width: 100%;
+  background: black;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.clock {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+}
