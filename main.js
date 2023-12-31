@@ -66,6 +66,9 @@ timeForm.addEventListener("submit", (e) => {
     if (latedTime >= 30) {
       groundCounter += 0.8 * (latedTime - 29);
     }
+    ground.style = `background: hsl(124 55% ${groundCounter}%);`;
+    sunBackground.style = `top: ${sunBackgroundCounter}px;`;
+    sun.style = `bottom: ${sunCounter}px;`;
   }
   sunAnimate();
   home.classList.add("hide");
